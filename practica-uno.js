@@ -1,7 +1,11 @@
-import { LitElement, html } from 'lit-element';
+import { LitElement, html, css } from 'lit-element';
 import '@material/mwc-button';
 
 export class PracticaUno extends LitElement {
+
+    constructor(){
+        super();
+    }
 
     static styles = css`
     :host {
@@ -11,7 +15,7 @@ export class PracticaUno extends LitElement {
 
     render() {
         return html`
-            <mwc-button></mwc-button>
+            <mwc-button raised label="Clic"></mwc-button>
         `;
     }
 }
